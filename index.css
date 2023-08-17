@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+}
+.first-container {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  height: 360px;
+  width: 270px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.second-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 20px 20px 0px;
+  height: 360px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 14px 12px 14px;
+  width: 270px;
+}
+.info {
+  font-size: 12px;
+  margin: 2px 0px;
+}
+.continue {
+  background-color: black;
+  border-radius: 20px;
+  color: aliceblue;
+
+  padding: 8px 68px;
+  margin: 20px 26px;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  border-radius: 10px;
+
+  padding: 5px;
+  margin: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 10px;
+
+  padding: 5px;
+  margin: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  border-radius: 10px;
+
+  padding: 5px;
+  margin: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  border-radius: 10px;
+
+  padding: 5px;
+  margin: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+.summary {
+  padding: 5px;
+  margin: 10px;
+}
+.title {
+  padding: 5px;
+  margin: 15px 10px;
+}
+.circle {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin: 20px 65px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Great {
+  padding: 7px;
+  margin: 39px 0px 0px;
+}
+.r {
+  color: hsl(0, 100%, 67%);
+}
+.m {
+  color: hsl(39, 100%, 56%);
+}
+.v {
+  color: hsl(166, 100%, 37%);
+}
+.ve {
+  color: hsl(234, 85%, 45%);
+}
+.circle h1 {
+  font-size: 55px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    align-items: center;
+    background-color: white;
+  }
+  .main-container {
+    box-shadow: none;
+    flex-direction: column;
+  }
+  .first-container {
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+  }
+  .first-container .info {
+    width: 250px;
+  }
+  .summary {
+    width: 100%;
+  }
+}
